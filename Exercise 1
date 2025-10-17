@@ -1,0 +1,7 @@
+list("Regent College London") 
+print(list[0:7]) 
+print(list[0:7:16]) 
+print(list("College")) 
+print(list[3:7],"le") 
+print(list[-4:-2]) 
+print(list.split("Regent London")) 
