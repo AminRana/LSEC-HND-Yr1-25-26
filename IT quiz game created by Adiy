@@ -1,0 +1,50 @@
+# Simple IT Quiz Game 
+
+score = 0
+
+print("Welcome to the IT Quiz Game!")
+name = input("What is your name? ")
+print("Hi", name, "let's begin!\n")
+
+# QUESTION 1
+print("1) What does CPU stand for?")
+print("A) Central Processing Unit")
+print("B) Central Print Unit")
+print("C) Computer Personal Unit")
+answer1 = input("Your answer: ")
+
+if answer1.upper() == "A":
+    print("Correct!\n")
+    score += 1
+else:
+    print("Wrong! The correct answer is A.\n")
+
+# QUESTION 2
+print("2) Which one is a programming language?")
+print("A) HDMI")
+print("B) Python")
+print("C) SSD")
+answer2 = input("Your answer: ")
+
+if answer2.upper() == "B":
+    print("Correct!\n")
+    score += 1
+else:
+    print("Wrong! The correct answer is B.\n")
+
+# QUESTION 3
+print("3) What does RAM stand for?")
+print("A) Random Access Memory")
+print("B) Read After Memory")
+print("C) Rapid Access Machine")
+answer3 = input("Your answer: ")
+
+if answer3.upper() == "A":
+    print("Correct!\n")
+    score += 1
+else:
+    print("Wrong! The correct answer is A.\n")
+
+# FINAL SCORE
+print("Quiz Finished!")
+print("You scored:", score, "out of 3")
