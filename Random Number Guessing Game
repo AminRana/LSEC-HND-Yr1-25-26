@@ -1,0 +1,33 @@
+import random 
+Random_Number = random.randint(50, 60)
+
+
+
+
+Guessed_Number=int(input("Guess a number between 50 and 60: "))
+print(Guessed_Number)
+if Guessed_Number <50 or Guessed_Number >60:
+    print("Please enter a valid number between 50 and 60.")
+    Guessed_Number=int(input("Guess a number between 50 and 60: "))
+
+
+
+if Guessed_Number==Random_Number:
+    print("Congratulations! You guessed the correct number.")
+   
+if Guessed_Number!=Random_Number:
+    difference=abs(Random_Number-Guessed_Number)
+if difference <5 or difference ==5:
+   print("You are very close!")
+if difference >5:
+   print("You are far away!")
+print("You have only one more chance to guess the correct number.")
+  
+while Guessed_Number!=Random_Number:
+    Guessed_Number=int(input("Guess a number between 50 and 60: "))
+    if Guessed_Number==Random_Number:
+       print("Congratulations! You guessed the correct number.")
+
+    else:
+       print("Sorry, you have used all your chances. The correct number was", Random_Number)
+       break
